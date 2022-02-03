@@ -51,6 +51,7 @@ import {LayoutComponent} from './DemoPages/Forms/Elements/layout/layout.componen
 // Charts
 
 import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
+import { AjoutComponent } from './Etudiant/ajout/ajout.component';
 
 const routes: Routes = [
   {
@@ -58,9 +59,16 @@ const routes: Routes = [
     component: BaseLayoutComponent,
     children: [
 
+      //Etudiant
+      {path: 'etudiant/ajout', component: AjoutComponent, data: {extraParameter: 'etudiantMenu'}},
+
+
+
       // Dashboads
 
       {path: '', component: AnalyticsComponent, data: {extraParameter: 'dashboardsMenu'}},
+      {path: '', component: AnalyticsComponent, data: {extraParameter: 'dashboardsMenu'}},
+      
 
       // Elements
 
