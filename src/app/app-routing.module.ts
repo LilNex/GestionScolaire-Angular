@@ -51,7 +51,8 @@ import {LayoutComponent} from './DemoPages/Forms/Elements/layout/layout.componen
 // Charts
 
 import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
-import { AjoutComponent } from './Etudiant/ajout/ajout.component';
+import { AjoutComponent as AjoutEtudiantComp } from './Etudiant/ajout/ajout.component';
+import { ListeComponent as ListeEtudiantComp } from './etudiant/liste/liste.component';
 
 const routes: Routes = [
   {
@@ -60,7 +61,12 @@ const routes: Routes = [
     children: [
 
       //Etudiant
-      {path: 'etudiant/ajout', component: AjoutComponent, data: {extraParameter: 'etudiantMenu'}},
+      {path: 'etudiant/ajout', component: AjoutEtudiantComp, data: {extraParameter: 'etudiantMenu'}},
+      {path: 'etudiant/liste', component: ListeEtudiantComp, data: {extraParameter: 'etudiantMenu'}},
+
+      //Profs
+      {path: 'profs/ajout', component: AjoutEtudiantComp, data: {extraParameter: 'profsMenu'}},
+      {path: 'profs/liste', component: ListeEtudiantComp, data: {extraParameter: 'profsMenu'}},
 
 
 

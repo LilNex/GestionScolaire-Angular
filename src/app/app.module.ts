@@ -104,6 +104,12 @@ import {DynamicChartComponent} from './DemoPages/Charts/chartjs/examples/dynamic
 import {DoughnutChartComponent} from './DemoPages/Charts/chartjs/examples/doughnut-chart/doughnut-chart.component';
 import {PieChartComponent} from './DemoPages/Charts/chartjs/examples/pie-chart/pie-chart.component';
 import { AjoutComponent } from './Etudiant/ajout/ajout.component';
+import { JsonFormsModule } from '@jsonforms/angular';
+import { ListeComponent } from './etudiant/liste/liste.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
+import {NotifierModule} from 'angular-notifier';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -195,6 +201,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BubbleChartComponent,
     ScatterChartComponent,
     AjoutComponent,
+    ListeComponent,
   ],
   imports: [
     BrowserModule,
@@ -203,6 +210,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgReduxModule,
     CommonModule,
     LoadingBarRouterModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
 
     // Angular Bootstrap Components
 
@@ -213,11 +222,17 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     ReactiveFormsModule,
     HttpClientModule,
 
+    JsonFormsModule,
+    NotifierModule,
+    
+    
+
     // Charts
 
     ChartsModule,
   ],
   providers: [
+    MatDatepickerModule,
     {
       provide:
       PERFECT_SCROLLBAR_CONFIG,

@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "title": "etudiant",
+    "properties": {
+      "nom": {
+        "type": "string",
+        "minLength": 3
+      },
+      "prenom": {
+        "type": "string",
+        "minLength": 3
+      },
+      "dateNaissance": {
+        "type": "string",
+        "format":"date",
+        "minLength": 3
+      },
+      "telEtudiant": {
+        "type": "string",
+        "minLength": 3
+      },
+      "nomPere": {
+        "type": "string",
+        "minLength": 3
+      },
+      "metierPere": {
+        "type": "string",
+        "minLength": 3
+      },
+      "telPere": {
+        "type": "string",
+        "minLength": 3
+      },
+      "nomMere": {
+        "type": "string",
+        "minLength": 3
+      },
+      "metierMere": {
+        "type": "string",
+        "minLength": 3
+      },
+      "telMere": {
+        "type": "string",
+        "minLength": 3
+      }
+    }
+  }
