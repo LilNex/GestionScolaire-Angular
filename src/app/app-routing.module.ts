@@ -53,6 +53,8 @@ import {LayoutComponent} from './DemoPages/Forms/Elements/layout/layout.componen
 import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 import { AjoutComponent as AjoutEtudiantComp } from './Etudiant/ajout/ajout.component';
 import { ListeComponent as ListeEtudiantComp } from './etudiant/liste/liste.component';
+import { AjoutComponent as AjoutProfsComp } from './profs/ajout/ajout.component';
+import {ListeComponent as ListeProfsComp} from './profs/liste/liste.component';
 
 const routes: Routes = [
   {
@@ -65,8 +67,8 @@ const routes: Routes = [
       {path: 'etudiant/liste', component: ListeEtudiantComp, data: {extraParameter: 'etudiantMenu'}},
 
       //Profs
-      {path: 'profs/ajout', component: AjoutEtudiantComp, data: {extraParameter: 'profsMenu'}},
-      {path: 'profs/liste', component: ListeEtudiantComp, data: {extraParameter: 'profsMenu'}},
+      {path: 'profs/ajout', component: AjoutProfsComp, data: {extraParameter: 'profsMenu'}},
+      {path: 'profs/liste', component: ListeProfsComp, data: {extraParameter: 'profsMenu'}},
 
 
 

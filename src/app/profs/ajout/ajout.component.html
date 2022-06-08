@@ -1,1 +1,27 @@
-<p>ajout works!</p>
+<!-- <app-page-title [heading]="heading" [subheading]="subheading" [icon]="icon" lblButton="Ajouter" ></app-page-title> -->
+<div class="row">
+    <div class="col-md-10">
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">Informations sur l'etudiant</h5>
+                <jsonforms
+                    [(data)]="data"
+                    [schema]="schema"
+                    [uischema]="uischema"
+                    [renderers]="renderers"
+                    
+                ></jsonforms>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <button class="mb-2 me-2 btn btn-success"
+            (click)="addNewProf()"
+        >Success
+        </button>
+    </div>
+
+    
+    
+</div>
+

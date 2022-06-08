@@ -1,0 +1,46 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/nom"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/prenom"
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/dateNaissance"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/tel"
+        }
+      ]
+    },
+    {
+      
+          "type": "VerticalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/adresse"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/niveauScolaire"
+            }
+          ]
+        }
+      
+  ]
+}

@@ -103,9 +103,11 @@ import {BubbleChartComponent} from './DemoPages/Charts/chartjs/examples/bubble-c
 import {DynamicChartComponent} from './DemoPages/Charts/chartjs/examples/dynamic-chart/dynamic-chart.component';
 import {DoughnutChartComponent} from './DemoPages/Charts/chartjs/examples/doughnut-chart/doughnut-chart.component';
 import {PieChartComponent} from './DemoPages/Charts/chartjs/examples/pie-chart/pie-chart.component';
-import { AjoutComponent } from './Etudiant/ajout/ajout.component';
+import { AjoutComponent as AjoutEtudiantComp } from './Etudiant/ajout/ajout.component';
+import { ListeComponent as ListeEtudiantComp } from './etudiant/liste/liste.component';
+import { AjoutComponent as AjoutProfsComp } from './profs/ajout/ajout.component';
+import {ListeComponent as ListeProfsComp} from './profs/liste/liste.component';
 import { JsonFormsModule } from '@jsonforms/angular';
-import { ListeComponent } from './etudiant/liste/liste.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
@@ -200,8 +202,10 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     DynamicChartComponent,
     BubbleChartComponent,
     ScatterChartComponent,
-    AjoutComponent,
-    ListeComponent,
+    AjoutEtudiantComp,
+    AjoutProfsComp,
+    ListeEtudiantComp,
+    ListeProfsComp,
   ],
   imports: [
     BrowserModule,
