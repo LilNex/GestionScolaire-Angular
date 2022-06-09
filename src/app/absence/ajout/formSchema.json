@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "title": "absence",
+    "properties": {
+      "date": {
+        "type": "string",
+        "format":"date",
+        "minLength": 3
+      },
+      "justifie": {
+        "type": "boolean",
+        "minLength": 3
+      },
+      "idEtudiant": {
+        "type": "string",
+        "minLength": 3,
+        "oneOf":[
+          {
+            "const": 2,
+            "title": "Boulif Safaa"
+          }
+        ]
+      },
+      
+      
+      "justification": {
+        "type": "string",
+        "minLength": 3,
+        "rule": {
+          "effect": "DISABLE",
+          "condition": {
+            "scope": "#/properties/justifie",
+            "schema":  true 
+          }
+        }
+      }
+    }
+  }

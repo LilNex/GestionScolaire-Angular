@@ -1,0 +1,35 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/idEtudiant"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/date"
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/motif"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/severite",
+          "options": {
+            "format": "radio"
+            
+          }
+        }
+      ]
+    }
+  ]
+}

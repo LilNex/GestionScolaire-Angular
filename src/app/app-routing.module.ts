@@ -55,6 +55,11 @@ import { AjoutComponent as AjoutEtudiantComp } from './Etudiant/ajout/ajout.comp
 import { ListeComponent as ListeEtudiantComp } from './etudiant/liste/liste.component';
 import { AjoutComponent as AjoutProfsComp } from './profs/ajout/ajout.component';
 import {ListeComponent as ListeProfsComp} from './profs/liste/liste.component';
+import{AjoutComponent as AjoutAbsenceComp} from './absence/ajout/ajout.component';
+import{ListeComponent as ListeAbsenceComp}from'./absence/liste/liste.component';
+import{AjoutComponent as AjoutAvertisComp}from './avertissement/ajout/ajout.component';
+import{ListeComponent as ListeAvertisComp} from './avertissement/liste/liste.component';
+
 
 const routes: Routes = [
   {
@@ -69,6 +74,12 @@ const routes: Routes = [
       //Profs
       {path: 'profs/ajout', component: AjoutProfsComp, data: {extraParameter: 'profsMenu'}},
       {path: 'profs/liste', component: ListeProfsComp, data: {extraParameter: 'profsMenu'}},
+
+      {path: 'Absence/ajout', component: AjoutAbsenceComp, data: {extraParameter: 'AbsenceMenu'}},
+      {path: 'Absence/liste', component: ListeAbsenceComp, data: {extraParameter: 'AbsenceMenu'}},
+
+      {path: 'Avertis/ajout', component: AjoutAvertisComp, data: {extraParameter: 'AvertisMenu'}},
+      {path: 'Avertis/liste', component: ListeAvertisComp, data: {extraParameter: 'AvertisMenu'}},
 
 
 

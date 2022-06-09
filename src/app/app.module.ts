@@ -112,6 +112,14 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import {NotifierModule} from 'angular-notifier';
+import { AjoutComponent as AjoutAbsenceComp} from './absence/ajout/ajout.component';
+import { ListeComponent as ListeAbsenceComp} from './absence/liste/liste.component';
+
+import { AjoutComponent as AjoutAvertissementComp} from './avertissement/ajout/ajout.component';
+import { ListeComponent as ListeAvertissementComp} from './avertissement/liste/liste.component';
+import { MAT_AUTOCOMPLETE_SCROLL_STRATEGY_FACTORY, MAT_AUTOCOMPLETE_SCROLL_STRATEGY_FACTORY_PROVIDER } from '@angular/material/autocomplete';
+import { MAT_SELECT_SCROLL_STRATEGY_PROVIDER } from '@angular/material/select';
+import { DetailsComponent } from './absence/details/details.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -206,6 +214,11 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AjoutProfsComp,
     ListeEtudiantComp,
     ListeProfsComp,
+    AjoutAbsenceComp,
+    ListeAbsenceComp,
+    AjoutAvertissementComp,
+    ListeAvertissementComp,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -244,7 +257,13 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
       useValue:
       DEFAULT_PERFECT_SCROLLBAR_CONFIG,
       // DEFAULT_DROPZONE_CONFIG,
-    },
+    },MAT_AUTOCOMPLETE_SCROLL_STRATEGY_FACTORY_PROVIDER,
+    MAT_SELECT_SCROLL_STRATEGY_PROVIDER,
+    // {
+    //   provide: 
+    //   useValue:MAT_SELECT_SCROLL_STRATEGY_PROVIDER
+    
+    // },
     ConfigActions,
   ],
   bootstrap: [AppComponent]

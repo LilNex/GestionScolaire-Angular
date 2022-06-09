@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "title": "avertissement",
+  "properties": {
+    "idEtudiant": {
+      "type": "string",
+      "minLength": 3,
+      "enum":[
+        "Ismail Chaiq"
+      ]
+    },
+    "motif": {
+      "type": "string",
+      "minLength": 3
+    },
+    "severite": {
+      "type": "string",
+      "enum": [
+        "Faible"
+        ,
+        "Moyen"
+        ,
+        "Haut"
+        ,
+        "Severe"
+        ,
+        "Impardonnable"
+        
+      ]
+    },
+    "date": {
+      "type": "string",
+      "minLength": 3,
+      "format": "date"
+    }
+  }
+}

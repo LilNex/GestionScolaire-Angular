@@ -6,6 +6,7 @@ import { angularMaterialRenderers } from "@jsonforms/angular-material";
 import * as formSchema from './formSchema.json';
 import * as uiSchema from './uiSchema.json';
 import { NotifierService } from 'angular-notifier';
+import { ValidationMode } from '@jsonforms/core';
 
 
 export interface IUser {
@@ -15,6 +16,7 @@ export interface IUser {
   
 }
 export interface IEtudiant{
+  id?:number,
   nom :string,
   prenom :string,
   dateNaissance:string,
@@ -43,6 +45,8 @@ export class AjoutComponent implements OnInit {
 
   }
   renderers = angularMaterialRenderers;
+  currentValidationMode:ValidationMode ="NoValidation";
+
   supabaseClient:SupabaseClient;
   constructor(notifierService: NotifierService) {
     this.supabaseClient = createClient(environment.supabase_url, environment.supabase_key);
